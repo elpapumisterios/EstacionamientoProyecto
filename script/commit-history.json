@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a45fddce4d52c27f2a23a1f2cb23858dc2ea92a0",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-07T23:59:53.000Z",
       "message": "jest: Hora salida vehiculo",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/a45fddce4d52c27f2a23a1f2cb23858dc2ea92a0"
     },
     "stats": {
       "total": 10,
@@ -53,6 +53,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-08T00:13:44.000Z",
+      "message": "jest: Perdida ticket",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }

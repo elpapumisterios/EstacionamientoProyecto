@@ -12,3 +12,8 @@ test("Registrar hora de salida", () => {
     estacionamiento.horaSalidaVehiculo("10:00");
     expect(estacionamiento.horaSalida).toBe("10:00");
 }   );
+test("Indicar ticket perdido"   , () => {        
+    const estacionamiento= new Estacionamiento();
+    estacionamiento.marcarticketPerdido();
+    expect(estacionamiento.ticketPerdido).toBe(true);
+} );

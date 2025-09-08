@@ -22,7 +22,12 @@ class Estacionamiento{
     calcularTarifaNocturna(){
         return 6;   
     }
-    
+    aplicarTopeDiario(valor) {
+   
+    return valor > 50 ? 50 : valor;
+}
+
+
 }
 
 

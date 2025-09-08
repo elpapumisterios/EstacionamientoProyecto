@@ -33,3 +33,13 @@ test("calcular tarifa nocturna 22:00–06:00", () => {
     const resultado = estacionamiento.calcularTarifaNocturna();
     expect(resultado).toBe(6); 
 });
+test("aplicar tope máximo por día", () => {
+    const estacionamiento = new Estacionamiento();
+    estacionamiento.horaIngresoVehiculo("08:00");
+    estacionamiento.horaSalidaVehiculo("20:00"); 
+    estacionamiento.calcularTarifaBase();
+
+    
+    const tarifa = estacionamiento.aplicarTopeDiario(100); 
+    expect(tarifa).toBe(50); 
+});

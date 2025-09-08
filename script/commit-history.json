@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b7760a59886f2c083182bbb858668f26b66a308a",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-08T01:43:24.000Z",
       "message": "jest: validar horas",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/b7760a59886f2c083182bbb858668f26b66a308a"
     },
     "stats": {
       "total": 17,
@@ -186,6 +186,25 @@
     },
     "coverage": 95.24,
     "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-08T01:50:02.000Z",
+      "message": "jest: calcular monto total a pagar",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
   }

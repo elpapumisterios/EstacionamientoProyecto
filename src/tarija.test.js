@@ -60,3 +60,13 @@ test("validar que hora de salida no sea anterior a ingreso", () => {
         estacionamiento.validarHoras();
     }).toThrow("La hora de salida no puede ser anterior a la de ingreso");
 });
+test("calcular monto total a pagar", () => {
+    const estacionamiento = new Estacionamiento();
+    estacionamiento.horaIngresoVehiculo("08:00");
+    estacionamiento.horaSalidaVehiculo("09:00");
+    estacionamiento.calcularTarifaBase();
+
+    const total = estacionamiento.calcularTarifaFinal();
+    expect(total).toBe(10); 
+});
+

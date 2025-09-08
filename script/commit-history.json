@@ -95,16 +95,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f9860e56e377130f076b1a5d3c4731dd552b0ce2",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-08T01:25:53.000Z",
       "message": "jest: Calcular tarija nocturna",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/f9860e56e377130f076b1a5d3c4731dd552b0ce2"
     },
     "stats": {
       "total": 14,
       "additions": 13,
+      "deletions": 1,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-08T01:30:51.000Z",
+      "message": "jest: calcular tarija nocturan",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 4,
       "deletions": 1,
       "date": "2025-09-08"
     },

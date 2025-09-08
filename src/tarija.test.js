@@ -25,8 +25,11 @@ test("calcular tarifa base", () => {
 } );
 
 
-test("calcular tarifa nocturna", () => {
+test("calcular tarifa nocturna 22:00–06:00", () => {
     const estacionamiento = new Estacionamiento();
+    estacionamiento.horaIngresoVehiculo("22:30");
+    estacionamiento.horaSalidaVehiculo("23:30");  
+
     const resultado = estacionamiento.calcularTarifaNocturna();
     expect(resultado).toBe(6); 
 });

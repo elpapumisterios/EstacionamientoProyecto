@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "34f4d442a893df08395fed709fe96428ed01de4f",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-08T01:50:02.000Z",
       "message": "jest: calcular monto total a pagar",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/34f4d442a893df08395fed709fe96428ed01de4f"
     },
     "stats": {
       "total": 10,
@@ -205,6 +205,25 @@
     },
     "coverage": 100,
     "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-08T02:08:49.000Z",
+      "message": "jest: desgloese por dia",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 20,
+      "deletions": 0,
+      "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
   }

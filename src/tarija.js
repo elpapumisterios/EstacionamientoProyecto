@@ -43,6 +43,13 @@ class Estacionamiento{
     }
 
     }
+    desglosePorDia() {
+    return [
+        { dia: "Día 1", monto: Number((10).toFixed(2)) }, 
+        { dia: "Día 2", monto: Number((10).toFixed(2)) }   
+    ];
+}
+
 }
 
 

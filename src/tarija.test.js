@@ -70,3 +70,16 @@ test("calcular monto total a pagar", () => {
     expect(total).toBe(10); 
 });
 
+test("desglose por día para estadía larga", () => {
+    const estacionamiento = new Estacionamiento();
+    estacionamiento.horaIngresoVehiculo("23:00");
+    estacionamiento.horaSalidaVehiculo("02:00"); 
+    estacionamiento.calcularTarifaBase();
+
+    const desglose = estacionamiento.desglosePorDia();
+    expect(desglose).toEqual([
+        { dia: "Día 1", monto: 10 },
+        { dia: "Día 2", monto: 10 }
+    ]);
+});
+

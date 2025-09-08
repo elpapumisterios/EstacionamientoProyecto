@@ -3,6 +3,7 @@ class Estacionamiento{
         this.horaIngreso = null;
         this.horaSalida = null;
         this.ticketPerdido = false;
+        this.tarifaBase = 0;
     }
      horaIngresoVehiculo(hora){
         return this.horaIngreso=hora;
@@ -13,6 +14,9 @@ class Estacionamiento{
     marcarticketPerdido(){
          this.ticketPerdido=true;
     }
+    calcularTarifaBase(){
+        this.tarifaBase=10;
+    }   
 
 }
 

@@ -17,3 +17,9 @@ test("Indicar ticket perdido"   , () => {
     estacionamiento.marcarticketPerdido();
     expect(estacionamiento.ticketPerdido).toBe(true);
 } );
+test("calcular tarifa base", () => {
+    const estacionamiento= new Estacionamiento();
+    estacionamiento.calcularTarifaBase();
+
+    expect(estacionamiento.tarifaBase).toBe(10);
+} );

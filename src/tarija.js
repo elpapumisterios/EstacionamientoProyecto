@@ -31,9 +31,18 @@ class Estacionamiento{
          if (this.ticketPerdido) return 80;
         return this.tarifaBase;
     }
+    validarHoras() {
+    const [h1, m1] = this.horaIngreso.split(":").map(Number);
+    const [h2, m2] = this.horaSalida.split(":").map(Number);
 
+    const minutosIngreso = h1 * 60 + m1;
+    const minutosSalida = h2 * 60 + m2;
 
+    if (minutosSalida < minutosIngreso) {
+        throw new Error("La hora de salida no puede ser anterior a la de ingreso");
+    }
 
+    }
 }
 
 

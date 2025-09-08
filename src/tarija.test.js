@@ -51,4 +51,12 @@ test("tarifa penalidad por ticket perdido", () => {
     const tarifa = estacionamiento.calcularTarifaFinal();
     expect(tarifa).toBe(80);
 });
+test("validar que hora de salida no sea anterior a ingreso", () => {
+    const estacionamiento = new Estacionamiento();
+    estacionamiento.horaIngresoVehiculo("10:00");
+    estacionamiento.horaSalidaVehiculo("08:00");
 
+    expect(() => {
+        estacionamiento.validarHoras();
+    }).toThrow("La hora de salida no puede ser anterior a la de ingreso");
+});

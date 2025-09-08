@@ -152,12 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "40a118615f022d3036db303adaa9f66e0b2b2f89",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-08T01:39:32.000Z",
       "message": "jest: calcula rTarija Final",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/40a118615f022d3036db303adaa9f66e0b2b2f89"
     },
     "stats": {
       "total": 17,
@@ -167,6 +167,25 @@
     },
     "coverage": 93.33,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-08T01:43:24.000Z",
+      "message": "jest: validar horas",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2025-09-08"
+    },
+    "coverage": 95.24,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }

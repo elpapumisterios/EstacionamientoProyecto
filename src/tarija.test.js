@@ -23,3 +23,10 @@ test("calcular tarifa base", () => {
 
     expect(estacionamiento.tarifaBase).toBe(10);
 } );
+
+
+test("calcular tarifa nocturna", () => {
+    const estacionamiento = new Estacionamiento();
+    const resultado = estacionamiento.calcularTarifaNocturna();
+    expect(resultado).toBe(6); 
+});

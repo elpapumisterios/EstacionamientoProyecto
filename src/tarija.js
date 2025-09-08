@@ -4,6 +4,7 @@ class Estacionamiento{
         this.horaSalida = null;
         this.ticketPerdido = false;
         this.tarifaBase = 0;
+        
     }
      horaIngresoVehiculo(hora){
         return this.horaIngreso=hora;
@@ -18,6 +19,10 @@ class Estacionamiento{
         this.tarifaBase=10;
     }   
 
+    calcularTarifaNocturna(){
+        return 6;   
+    }
+    
 }
 
 

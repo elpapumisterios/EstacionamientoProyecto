@@ -43,3 +43,12 @@ test("aplicar tope máximo por día", () => {
     const tarifa = estacionamiento.aplicarTopeDiario(100); 
     expect(tarifa).toBe(50); 
 });
+
+test("tarifa penalidad por ticket perdido", () => {
+    const estacionamiento = new Estacionamiento();
+    estacionamiento.marcarticketPerdido();
+
+    const tarifa = estacionamiento.calcularTarifaFinal();
+    expect(tarifa).toBe(80);
+});
+

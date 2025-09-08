@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a4bb1da1f081aba11230a3a001830b7ca2815213",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-08T01:35:54.000Z",
       "message": "jest: aplicar tope diario",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/a4bb1da1f081aba11230a3a001830b7ca2815213"
     },
     "stats": {
       "total": 17,
@@ -148,6 +148,25 @@
     },
     "coverage": 100,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-08T01:39:32.000Z",
+      "message": "jest: calcula rTarija Final",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 16,
+      "deletions": 1,
+      "date": "2025-09-08"
+    },
+    "coverage": 93.33,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }

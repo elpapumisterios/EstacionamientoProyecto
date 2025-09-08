@@ -25,7 +25,13 @@ class Estacionamiento{
     aplicarTopeDiario(valor) {
    
     return valor > 50 ? 50 : valor;
-}
+    }
+    calcularTarifaFinal() {
+
+         if (this.ticketPerdido) return 80;
+        return this.tarifaBase;
+    }
+
 
 
 }

@@ -4,6 +4,7 @@ class Estacionamiento{
         this.horaSalida = null;
         this.ticketPerdido = false;
         this.tarifaBase = 0;
+        this._desglose = [];
         
     }
      horaIngresoVehiculo(hora){
@@ -102,6 +103,7 @@ class Estacionamiento{
     this._desglose = resultados;
     return Number(total.toFixed(2));
     }
+
     validarHoras() {
     const [h1, m1] = this.horaIngreso.split(":").map(Number);
     const [h2, m2] = this.horaSalida.split(":").map(Number);
@@ -114,12 +116,49 @@ class Estacionamiento{
     }
 
     }
-    desglosePorDia() {
-    return [
-        { dia: "Día 1", monto: Number((10).toFixed(2)) }, 
-        { dia: "Día 2", monto: Number((10).toFixed(2)) }   
-    ];
+   desglosePorDia() {
+      const resultados = [];
+    let inicio = this._horaEnMinutos(this.horaIngreso);
+    let fin = this._horaEnMinutos(this.horaSalida);
+
+    if (fin <= inicio) fin += 24 * 60; // cruza medianoche
+
+    let dia = 1;
+    let actual = inicio;
+
+    while (actual < fin) {
+        let limiteDia = Math.floor(actual / (24 * 60)) * (24 * 60) + (24 * 60);
+        let finDia = Math.min(fin, limiteDia);
+
+        const minutos = finDia - actual;
+        const horas = Math.ceil(minutos / 60);
+        const monto = this.aplicarTopeDiario(horas * 10);
+
+        resultados.push({ dia: `Día ${dia}`, monto });
+
+        actual = finDia;
+        dia++;
+    }
+
+    return resultados;
 }
+_diferenciaEnMinutos() {
+    const [h1, m1] = this.horaIngreso.split(":").map(Number);
+    const [h2, m2] = this.horaSalida.split(":").map(Number);
+
+    let inicio = h1 * 60 + m1;
+    let fin = h2 * 60 + m2;
+    if (fin < inicio) fin += 24 * 60; // cruza medianoche
+
+    return fin - inicio;
+}
+
+_horaEnMinutos(hora) {
+    const [h, m] = hora.split(":").map(Number);
+    return h * 60 + m;
+}
+
+
 
 }
 

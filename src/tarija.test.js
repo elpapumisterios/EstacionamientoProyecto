@@ -99,7 +99,24 @@ test("desglose por día para estadía larga", () => {
     const desglose = estacionamiento.desglosePorDia();
     expect(desglose).toEqual([
         { dia: "Día 1", monto: 10 },
-        { dia: "Día 2", monto: 10 }
+        { dia: "Día 2", monto: 20 }
     ]);
+});
+test("redondeo hacia arriba: 1h 10min = Bs 20", () => {
+    const estacionamiento = new Estacionamiento();
+    estacionamiento.horaIngresoVehiculo("08:00");
+    estacionamiento.horaSalidaVehiculo("09:10");
+
+    const total = estacionamiento.calcularTarifaFinal();
+    expect(total).toBe(20);
+});
+
+test("redondeo hacia arriba: 2h 30min = Bs 30", () => {
+    const estacionamiento = new Estacionamiento();
+    estacionamiento.horaIngresoVehiculo("08:00");
+    estacionamiento.horaSalidaVehiculo("10:30");
+
+    const total = estacionamiento.calcularTarifaFinal();
+    expect(total).toBe(30);
 });
 

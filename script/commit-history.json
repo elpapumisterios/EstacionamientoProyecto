@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e5207d1126fac1482c4e0d4b55756d85bc4489f9",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-09T01:36:45.000Z",
       "message": "refactor: calculartarifaFinal",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/e5207d1126fac1482c4e0d4b55756d85bc4489f9"
     },
     "stats": {
       "total": 31,
@@ -281,6 +281,25 @@
     },
     "coverage": 98.46,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-09T01:51:07.000Z",
+      "message": "Fix: corregir cálculo en desglose por dia",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 68,
+      "additions": 62,
+      "deletions": 6,
+      "date": "2025-09-09"
+    },
+    "coverage": 91.21,
+    "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
   }

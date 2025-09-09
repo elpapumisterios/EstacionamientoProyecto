@@ -36,26 +36,24 @@ class Estacionamiento{
     }   
 
     calcularTarifaNocturna(){
-          const [h1, m1] = this.horaIngreso.split(":").map(Number);
-    const [h2, m2] = this.horaSalida.split(":").map(Number);
 
-    let inicio = h1 * 60 + m1;
-    let fin = h2 * 60 + m2;
+        let inicio = this._horaEnMinutos(this.horaIngreso);
+    let fin = this._horaEnMinutos(this.horaSalida);
 
-    if (fin < inicio) {
-        
-        fin += 24 * 60;
-    }
+    if (fin <= inicio) fin += 24 * 60; // cruza medianoche
 
-    let total = 0;
-    for (let t = inicio; t < fin; t += 60) {
+    let minutosNocturnos = 0;
+
+    for (let t = inicio; t < fin; t++) {
         const hora = Math.floor((t % (24 * 60)) / 60);
         if (hora >= 22 || hora < 6) {
-            total += 6;
+            minutosNocturnos++;
         }
     }
 
-    return total;  
+    const horasNocturnas = Math.ceil(minutosNocturnos / 60);
+    return Number((horasNocturnas * 6).toFixed(2));
+    
     }
     aplicarTopeDiario(valor) {
    

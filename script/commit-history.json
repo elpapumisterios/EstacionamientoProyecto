@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "17c75d5e9a2e3db2ef7c2c8e7237a28e0dea0772",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-09T01:51:07.000Z",
       "message": "Fix: corregir cálculo en desglose por dia",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/17c75d5e9a2e3db2ef7c2c8e7237a28e0dea0772"
     },
     "stats": {
       "total": 68,
@@ -299,6 +299,25 @@
       "date": "2025-09-09"
     },
     "coverage": 91.21,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-09T01:55:31.000Z",
+      "message": "fix: corregir cálculo de tarifa nocturna para considerar fracciones de hora",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 10,
+      "deletions": 12,
+      "date": "2025-09-09"
+    },
+    "coverage": 91.11,
     "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"

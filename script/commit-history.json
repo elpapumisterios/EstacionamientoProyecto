@@ -304,12 +304,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "36c24dfceeb462b9a97b06075b80e7b4359a9e0b",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-09T01:55:31.000Z",
       "message": "fix: corregir cálculo de tarifa nocturna para considerar fracciones de hora",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/36c24dfceeb462b9a97b06075b80e7b4359a9e0b"
     },
     "stats": {
       "total": 22,
@@ -321,5 +321,24 @@
     "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-09T02:32:08.000Z",
+      "message": "html, presenter",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 116,
+      "additions": 86,
+      "deletions": 30,
+      "date": "2025-09-09"
+    },
+    "coverage": 91.3,
+    "test_count": 15,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

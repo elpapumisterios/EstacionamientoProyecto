@@ -53,7 +53,6 @@ class Estacionamiento{
 
     const horasNocturnas = Math.ceil(minutosNocturnos / 60);
     return Number((horasNocturnas * 6).toFixed(2));
-    
     }
     aplicarTopeDiario(valor) {
    
@@ -119,23 +118,29 @@ class Estacionamiento{
     let inicio = this._horaEnMinutos(this.horaIngreso);
     let fin = this._horaEnMinutos(this.horaSalida);
 
-    if (fin <= inicio) fin += 24 * 60; // cruza medianoche
+    // Cruza medianoche
+    if (fin <= inicio) fin += 24 * 60;
 
     let dia = 1;
-    let actual = inicio;
+    let acumuladoDia = 0;
+    for (let t = inicio; t < fin; t++) {
+        const hora = Math.floor((t % (24 * 60)) / 60);
 
-    while (actual < fin) {
-        let limiteDia = Math.floor(actual / (24 * 60)) * (24 * 60) + (24 * 60);
-        let finDia = Math.min(fin, limiteDia);
+        // Tarifa nocturna o diurna
+        const costoHora = (hora >= 22 || hora < 6) ? 6 : 10;
 
-        const minutos = finDia - actual;
-        const horas = Math.ceil(minutos / 60);
-        const monto = this.aplicarTopeDiario(horas * 10);
+        acumuladoDia += costoHora;
 
-        resultados.push({ dia: `Día ${dia}`, monto });
-
-        actual = finDia;
-        dia++;
+        // Cada 60 minutos o fin de la estadía
+        if ((t + 1) % 60 === 0 || t + 1 >= fin) {
+            // Si termina el día calendario
+            if ((t + 1) % (24 * 60) === 0 || t + 1 >= fin) {
+                const montoConTope = this.aplicarTopeDiario(acumuladoDia);
+                resultados.push({ dia: `Día ${dia}`, monto: Number(montoConTope.toFixed(2)) });
+                acumuladoDia = 0;
+                dia++;
+            }
+        }
     }
 
     return resultados;

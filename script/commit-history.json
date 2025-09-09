@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fef40175e4bf70c9d35ec7c1e0812626fa114737",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-09T00:46:52.000Z",
       "message": "refactor: calculrTarijaBas,test: calcular tarifa base2: 1 hora = Bs 10",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/fef40175e4bf70c9d35ec7c1e0812626fa114737"
     },
     "stats": {
       "total": 26,
@@ -243,6 +243,25 @@
     },
     "coverage": 100,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-09T01:06:59.000Z",
+      "message": "refactor: calcuñartarijafinal, calculartarijaNocturna,test: agregamos test adicionales",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 72,
+      "additions": 68,
+      "deletions": 4,
+      "date": "2025-09-09"
+    },
+    "coverage": 98.21,
+    "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
   }

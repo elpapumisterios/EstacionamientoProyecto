@@ -36,6 +36,25 @@ test("calcular tarifa nocturna 22:00–06:00", () => {
     const resultado = estacionamiento.calcularTarifaNocturna();
     expect(resultado).toBe(6); 
 });
+/// test adicionales--------------
+test("calcular tarifa nocturna 2 horas = Bs 12", () => {
+    const estacionamiento = new Estacionamiento();
+    estacionamiento.horaIngresoVehiculo("23:00");
+    estacionamiento.horaSalidaVehiculo("01:00"); 
+
+    const resultado = estacionamiento.calcularTarifaNocturna();
+    expect(resultado).toBe(12);
+});
+
+test("tarifa mixta: 1h normal + 1h nocturna = Bs 16", () => {
+    const estacionamiento = new Estacionamiento();
+    estacionamiento.horaIngresoVehiculo("21:00");
+    estacionamiento.horaSalidaVehiculo("23:00");
+
+    const resultado = estacionamiento.calcularTarifaFinal();
+    expect(resultado).toBe(16);
+});
+///___________________________________________________
 test("aplicar tope máximo por día", () => {
     const estacionamiento = new Estacionamiento();
     estacionamiento.horaIngresoVehiculo("08:00");

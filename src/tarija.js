@@ -23,7 +23,7 @@ class Estacionamiento{
     let fin = h2 * 60 + m2;
 
     if (fin < inicio) {
-        // cruza medianoche
+        
         fin += 24 * 60;
     }
 
@@ -35,7 +35,26 @@ class Estacionamiento{
     }   
 
     calcularTarifaNocturna(){
-        return 6;   
+          const [h1, m1] = this.horaIngreso.split(":").map(Number);
+    const [h2, m2] = this.horaSalida.split(":").map(Number);
+
+    let inicio = h1 * 60 + m1;
+    let fin = h2 * 60 + m2;
+
+    if (fin < inicio) {
+        
+        fin += 24 * 60;
+    }
+
+    let total = 0;
+    for (let t = inicio; t < fin; t += 60) {
+        const hora = Math.floor((t % (24 * 60)) / 60);
+        if (hora >= 22 || hora < 6) {
+            total += 6;
+        }
+    }
+
+    return total;  
     }
     aplicarTopeDiario(valor) {
    
@@ -43,8 +62,34 @@ class Estacionamiento{
     }
     calcularTarifaFinal() {
 
-         if (this.ticketPerdido) return 80;
-        return this.tarifaBase;
+          if (this.ticketPerdido) {
+        return 80.00; 
+    }
+
+    const [h1, m1] = this.horaIngreso.split(":").map(Number);
+    const [h2, m2] = this.horaSalida.split(":").map(Number);
+
+    let inicio = h1 * 60 + m1;
+    let fin = h2 * 60 + m2;
+
+    if (fin < inicio) {
+        
+        fin += 24 * 60;
+    }
+
+    let total = 0;
+
+    
+    for (let t = inicio; t < fin; t += 60) {
+        const hora = Math.floor((t % (24 * 60)) / 60);
+        if (hora >= 22 || hora < 6) {
+            total += 6; 
+        } else {
+            total += 10; 
+        }
+    }
+
+    return Number(total.toFixed(2));
     }
     validarHoras() {
     const [h1, m1] = this.horaIngreso.split(":").map(Number);

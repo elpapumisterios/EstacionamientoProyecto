@@ -55,15 +55,13 @@ test("tarifa mixta: 1h normal + 1h nocturna = Bs 16", () => {
     expect(resultado).toBe(16);
 });
 ///___________________________________________________
-test("aplicar tope máximo por día", () => {
+test("tope máximo diario aplicado en cálculo real", () => {
     const estacionamiento = new Estacionamiento();
     estacionamiento.horaIngresoVehiculo("08:00");
     estacionamiento.horaSalidaVehiculo("20:00"); 
-    estacionamiento.calcularTarifaBase();
 
-    
-    const tarifa = estacionamiento.aplicarTopeDiario(100); 
-    expect(tarifa).toBe(50); 
+    const total = estacionamiento.calcularTarifaFinal(); 
+    expect(total).toBe(50); 
 });
 
 test("tarifa penalidad por ticket perdido", () => {

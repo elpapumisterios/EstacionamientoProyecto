@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a4eb92c753860f46b0a049a64f7bb3855151bb67",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-09T01:06:59.000Z",
       "message": "refactor: calcuñartarijafinal, calculartarijaNocturna,test: agregamos test adicionales",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/a4eb92c753860f46b0a049a64f7bb3855151bb67"
     },
     "stats": {
       "total": 72,
@@ -261,6 +261,25 @@
       "date": "2025-09-09"
     },
     "coverage": 98.21,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-09T01:36:45.000Z",
+      "message": "refactor: calculartarifaFinal",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 20,
+      "deletions": 11,
+      "date": "2025-09-09"
+    },
+    "coverage": 98.46,
     "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"

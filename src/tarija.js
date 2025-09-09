@@ -62,7 +62,7 @@ class Estacionamiento{
     }
     calcularTarifaFinal() {
 
-          if (this.ticketPerdido) {
+        if (this.ticketPerdido) {
         return 80.00; 
     }
 
@@ -78,17 +78,28 @@ class Estacionamiento{
     }
 
     let total = 0;
+    let acumuladoDia = 0;
+    let diaActual = 1;
+    let resultados = [];
 
-    
     for (let t = inicio; t < fin; t += 60) {
         const hora = Math.floor((t % (24 * 60)) / 60);
-        if (hora >= 22 || hora < 6) {
-            total += 6; 
-        } else {
-            total += 10; 
+
+       
+        let costo = (hora >= 22 || hora < 6) ? 6 : 10;
+        acumuladoDia += costo;
+
+       
+        if (((t + 60) % (24 * 60)) === 0 || t + 60 >= fin) {
+            const montoConTope = this.aplicarTopeDiario(acumuladoDia);
+            resultados.push({ dia: `Día ${diaActual}`, monto: montoConTope });
+            total += montoConTope;
+            acumuladoDia = 0;
+            diaActual++;
         }
     }
 
+    this._desglose = resultados;
     return Number(total.toFixed(2));
     }
     validarHoras() {

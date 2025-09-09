@@ -16,7 +16,22 @@ class Estacionamiento{
          this.ticketPerdido=true;
     }
     calcularTarifaBase(){
-        this.tarifaBase=10;
+        const [h1, m1] = this.horaIngreso.split(":").map(Number);
+    const [h2, m2] = this.horaSalida.split(":").map(Number);
+
+    let inicio = h1 * 60 + m1;
+    let fin = h2 * 60 + m2;
+
+    if (fin < inicio) {
+        // cruza medianoche
+        fin += 24 * 60;
+    }
+
+    const minutos = fin - inicio;
+    const horas = Math.ceil(minutos / 60);
+
+    this.tarifaBase = horas * 10;
+    return this.tarifaBase;
     }   
 
     calcularTarifaNocturna(){

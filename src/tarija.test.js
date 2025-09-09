@@ -17,11 +17,14 @@ test("Indicar ticket perdido"   , () => {
     estacionamiento.marcarticketPerdido();
     expect(estacionamiento.ticketPerdido).toBe(true);
 } );
-test("calcular tarifa base", () => {
+test("calcular tarifa base:  1 hora = Bs 10", () => {
     const estacionamiento= new Estacionamiento();
-    estacionamiento.calcularTarifaBase();
+    estacionamiento.horaIngresoVehiculo("08:00");
+    estacionamiento.horaSalidaVehiculo("09:00");
 
-    expect(estacionamiento.tarifaBase).toBe(10);
+    const total = estacionamiento.calcularTarifaBase();
+    expect(total).toBe(10);
+
 } );
 
 

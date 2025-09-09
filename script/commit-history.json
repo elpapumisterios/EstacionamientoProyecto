@@ -209,18 +209,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bf25d14b9c8b2bf5408ce6dbccb4f23fa95da3e2",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-08T02:08:49.000Z",
       "message": "jest: desgloese por dia",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/bf25d14b9c8b2bf5408ce6dbccb4f23fa95da3e2"
     },
     "stats": {
       "total": 20,
       "additions": 20,
       "deletions": 0,
       "date": "2025-09-08"
+    },
+    "coverage": 100,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-09T00:46:52.000Z",
+      "message": "refactor: calculrTarijaBas,test: calcular tarifa base2: 1 hora = Bs 10",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 22,
+      "deletions": 4,
+      "date": "2025-09-09"
     },
     "coverage": 100,
     "test_count": 11,

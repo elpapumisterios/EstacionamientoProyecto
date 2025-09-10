@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Estacionamiento</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
         label { display: block; margin: 10px 0 5px; }
@@ -12,6 +13,7 @@
     </style>
 </head>
 <body>
+    <div class="container">
     <h1>Calculadora de Estacionamiento</h1>
 
     <label for="hora-ingreso">Hora de ingreso (HH:MM)</label>
@@ -21,16 +23,17 @@
     <input type="time" id="hora-salida" />
 
     <label>
-        <input type="checkbox" id="ticket-perdido" />
-        Ticket perdido
+      <input type="checkbox" id="ticket-perdido" />
+      Ticket perdido
     </label>
 
     <button id="calcular">Calcular Tarifa</button>
 
     <div id="resultado-total"></div>
     <div id="desglose-dias"></div>
+  </div>
 
-    <script type="module" src="./src/tarija.presenter.js"></script>
+  <script type="module" src="./src/tarija.presenter.js"></script>
 
 
 </body>

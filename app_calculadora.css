@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Título */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 1.6rem;
+}
+
+/* Labels y campos */
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+input[type="time"],
+input[type="checkbox"] {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border 0.3s;
+}
+
+input[type="time"]:focus {
+  outline: none;
+  border-color: #4facfe;
+}
+
+/* Checkbox en línea */
+label input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+/* Botón */
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Resultados */
+#resultado-total {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+#desglose-dias {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}

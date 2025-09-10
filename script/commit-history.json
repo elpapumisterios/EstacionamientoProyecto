@@ -380,17 +380,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5e62d02d689c3dea91460f92b492ebd492ffed07",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-10T22:32:04.000Z",
       "message": "style: mejorar diseño con CSS y enlazar en index.html",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/5e62d02d689c3dea91460f92b492ebd492ffed07"
     },
     "stats": {
       "total": 101,
       "additions": 101,
       "deletions": 0,
+      "date": "2025-09-10"
+    },
+    "coverage": 91.4,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-10T23:02:58.000Z",
+      "message": "fix: cambio de direccion css",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
       "date": "2025-09-10"
     },
     "coverage": 91.4,

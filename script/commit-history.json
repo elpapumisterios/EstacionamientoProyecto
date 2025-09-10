@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1735b73936b8b76ba71e52fbac75d09f06d60260",
     "author": "Oliver",
     "commit": {
       "date": "2025-09-09T02:32:08.000Z",
       "message": "html, presenter",
-      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/1735b73936b8b76ba71e52fbac75d09f06d60260"
     },
     "stats": {
       "total": 116,
@@ -340,5 +340,24 @@
     "test_count": 15,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-09-10T21:05:56.000Z",
+      "message": "test(desglose): ajustar test de desglose por día para reflejar tarifas nocturnas",
+      "url": "https://github.com/elpapumisterios/EstacionamientoProyecto/commit/HEAD"
+    },
+    "stats": {
+      "total": 46,
+      "additions": 26,
+      "deletions": 20,
+      "date": "2025-09-10"
+    },
+    "coverage": 91.4,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
